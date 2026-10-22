@@ -59,14 +59,12 @@ huakun@xjtlu:~$ ls ~/projects
 </div>
 
 <details>
-<summary><code>点开看看</code></summary>
+<summary><code>▸ 字符画版本 · 点开有动画</code></summary>
 
-```text
-█    █ █    █  ████  ██  ██ █    █ ██  ██
-█    █ █    █ ██  ██ ██ ██  █    █ ███ ██
-██████ █    █ ██████ ████   █    █ ██ ███
-█    █ █    █ ██  ██ ██ ██  █    █ ██  ██
-█    █  ████  ██  ██ ██  ██  ████  ██  ██
-```
+<br />
+
+<div align="center">
+  <img src="./assets/ascii.svg" width="100%" alt="ascii art" />
+</div>
 
 </details>
