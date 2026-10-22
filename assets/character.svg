@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="620" viewBox="0 0 460 620">
+  <rect width="460" height="620" fill="#0D1117"/>
+  <rect x="14" y="14" width="432" height="592" rx="12" fill="none" stroke="#FF6FA5" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="230" y="282" text-anchor="middle" font-family="Consolas, monospace" font-size="19" fill="#FF6FA5">[ PLACEHOLDER ]</text>
+  <text x="230" y="316" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#8B949E">assets/character.png</text>
+  <text x="230" y="344" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#8B949E">460 x 620</text>
+</svg>
