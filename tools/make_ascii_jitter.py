@@ -1,4 +1,8 @@
-"""Per-character animated ASCII art with a visible glitch wave."""
+"""Animated ASCII art: static base layer + a scattered animated overlay.
+
+Only a small, evenly spread fraction of glyphs animate, so the page stays
+smooth while still looking alive.
+"""
 import os
 import html
 
@@ -15,6 +19,7 @@ FONT = 9.0
 LH = 9.4
 PAD_X = 26
 PAD_Y = 30
+DENSITY = 0.12          # fraction of glyphs that animate
 
 img = Image.open(SRC).convert("L")
 w, h = img.size
@@ -29,39 +34,40 @@ CW = FONT * 0.6
 W = int(PAD_X * 2 + COLS * CW)
 H = int(PAD_Y * 2 + rows * LH)
 
+grid = []
+for i in range(rows):
+    row = []
+    for j in range(COLS):
+        v = 1.0 - (px[j, i] / 255.0)
+        v = v ** 0.85
+        row.append(ramp[min(top, int(v * top))])
+    grid.append(row)
+
 css = """
-.in{animation:fade .9s ease-out both}
+.in{animation:fade .8s ease-out both}
+.s{animation:scan 6s linear infinite}
+.b{font-family:Consolas,'Courier New',monospace;font-size:9px;fill:#ff6fa5;
+   animation-name:blink;animation-iteration-count:infinite}
 .j{font-family:Consolas,'Courier New',monospace;font-size:9px;fill:#ff6fa5;
    animation-name:jit;animation-iteration-count:infinite}
 .k{font-family:Consolas,'Courier New',monospace;font-size:9px;fill:#7de6ff;
-   animation-name:jit;animation-iteration-count:infinite}
-.r{animation:rg 5.5s linear infinite}
-.s{animation:scan 5s linear infinite}
-.f{animation:flash 5.5s linear infinite}
+   animation-name:blink;animation-iteration-count:infinite}
 @keyframes fade{from{opacity:0}to{opacity:1}}
-@keyframes jit{
-  0%,84%,100%{transform:translate(0,0);opacity:1}
-  86%{transform:translate(2.0px,-1.4px);opacity:.55}
-  90%{transform:translate(-1.8px,1.6px);opacity:1}
-  94%{transform:translate(1.0px,0.8px);opacity:.75}
+@keyframes blink{
+  0%,68%,100%{opacity:1}
+  72%{opacity:.10}
+  76%{opacity:1}
 }
-@keyframes rg{
-  0%,93%,100%{transform:translateX(0)}
-  94%{transform:translateX(-8px)}
-  96%{transform:translateX(7px)}
-  98%{transform:translateX(-2px)}
+@keyframes jit{
+  0%,76%,100%{transform:translate(0,0)}
+  79%{transform:translate(2px,-1.5px)}
+  85%{transform:translate(-1.5px,1.5px)}
+  91%{transform:translate(0.8px,0.6px)}
 }
 @keyframes scan{
   0%{transform:translateY(-80px);opacity:0}
   6%{opacity:1}94%{opacity:1}
   100%{transform:translateY(__H__px);opacity:0}
-}
-@keyframes flash{
-  0%,93%,100%{opacity:0}
-  94%{opacity:.10}
-  96%{opacity:0}
-  97%{opacity:.07}
-  98%{opacity:0}
 }
 """.replace("__H__", str(H))
 
@@ -75,7 +81,7 @@ parts.append(
     '<defs>'
     '<linearGradient id="g" x1="0" y1="0" x2="0" y2="1">'
     '<stop offset="0" stop-color="#6fe3ff" stop-opacity="0"/>'
-    '<stop offset="0.5" stop-color="#6fe3ff" stop-opacity="0.38"/>'
+    '<stop offset="0.5" stop-color="#6fe3ff" stop-opacity="0.34"/>'
     '<stop offset="1" stop-color="#6fe3ff" stop-opacity="0"/>'
     '</linearGradient>'
     '<style>%s</style></defs>' % css
@@ -83,34 +89,52 @@ parts.append(
 parts.append('<rect width="%d" height="%d" fill="#07080c"/>' % (W, H))
 parts.append('<g class="in">')
 
-count = 0
+# static base: one text element per line
 for i in range(rows):
-    base = PAD_Y + i * LH + FONT * 0.82
-    parts.append('<g class="r" style="animation-delay:%.2fs">' % (i * 0.045))
+    line = "".join(grid[i]).rstrip()
+    if not line:
+        continue
+    y = PAD_Y + i * LH + FONT * 0.82
+    parts.append(
+        '<text x="%d" y="%.1f" font-family="Consolas,\'Courier New\',monospace" '
+        'font-size="%.1f" fill="#ff6fa5">%s</text>'
+        % (PAD_X, y, FONT, html.escape(line))
+    )
+
+# scattered animated overlay
+moved = 0
+for i in range(rows):
+    y = PAD_Y + i * LH + FONT * 0.82
     for j in range(COLS):
-        v = 1.0 - (px[j, i] / 255.0)
-        v = v ** 0.85
-        ch = ramp[min(top, int(v * top))]
+        ch = grid[i][j]
         if ch == " ":
             continue
-        x = PAD_X + j * CW
         seed = (i * 7919 + j * 104729) % 1000
-        delay = seed / 220.0
-        dur = 2.6 + (seed % 7) * 0.30
-        cls = "j" if (seed % 4) else "k"
+        if seed >= int(DENSITY * 1000):
+            continue
+        x = PAD_X + j * CW
+        delay = (seed * 4) / 1000.0 * 3.4
+        dur = 2.6 + (seed % 9) * 0.28
+        if seed % 7 == 0:
+            cls = "k"
+        elif seed % 5 < 3:
+            cls = "j"
+        else:
+            cls = "b"
         parts.append(
             '<text class="%s" x="%.1f" y="%.1f" style="animation-delay:%.2fs;animation-duration:%.2fs">%s</text>'
-            % (cls, x, base, delay, dur, html.escape(ch))
+            % (cls, x, y, delay, dur, html.escape(ch))
         )
-        count += 1
-    parts.append("</g>")
+        moved += 1
 
 parts.append("</g>")
 parts.append('<rect class="s" x="0" y="0" width="%d" height="80" fill="url(#g)"/>' % W)
-parts.append('<rect class="f" x="0" y="0" width="%d" height="%d" fill="#7de6ff"/>' % (W, H))
 parts.append("</svg>")
 
 with open(OUT, "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(parts))
 
-print("wrote %s: %sx%s grid, %s glyphs, %s bytes" % (OUT, COLS, rows, count, os.path.getsize(OUT)))
+print(
+    "wrote %s: %sx%s grid, %s glyphs total, %s animated, %s bytes"
+    % (OUT, COLS, rows, sum(1 for r in grid for c in r if c != " "), moved, os.path.getsize(OUT))
+)
