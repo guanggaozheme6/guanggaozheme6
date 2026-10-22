@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="HUAKUN" />
+  <img src="./assets/banner.svg?v=2" width="100%" alt="HUAKUN" />
 </div>
 
 <div align="center">
@@ -9,13 +9,13 @@
 <br />
 
 <div align="center">
-  <img src="./assets/ascii.svg" width="100%" alt="ascii art" />
+  <img src="./assets/ascii.svg?v=2" width="100%" alt="ascii art" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="" />
+  <img src="./assets/divider.svg?v=2" width="100%" alt="" />
 </div>
 
 ```console
@@ -55,7 +55,7 @@ huakun@xjtlu:~$ ls ~/projects
 <br />
 
 <div align="center">
-  <img src="./assets/divider.svg" width="100%" alt="" />
+  <img src="./assets/divider.svg?v=2" width="100%" alt="" />
 </div>
 
 <details>
@@ -64,7 +64,7 @@ huakun@xjtlu:~$ ls ~/projects
 <br />
 
 <div align="center">
-  <img src="./assets/character.jpg" width="380" alt="character" />
+  <img src="./assets/character.jpg?v=2" width="380" alt="character" />
 </div>
 
 </details>
