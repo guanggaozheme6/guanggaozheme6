@@ -18,17 +18,9 @@
   <img src="./assets/divider.svg?v=3" width="100%" alt="" />
 </div>
 
-```console
-huakun@xjtlu:~$ whoami
-> Huakun Li  ·  大一  ·  Xi'an Jiaotong-Liverpool University
-> Suzhou, China
-
-huakun@xjtlu:~$ now --learning
-> linear algebra (matrices)  ·  MATLAB  ·  Python  ·  C
-
-huakun@xjtlu:~$ ls ~/projects
-> washing-text/    assessment1/
-```
+<div align="center">
+  <img src="./assets/term.svg" width="100%" alt="terminal" />
+</div>
 
 <div align="center">
 
