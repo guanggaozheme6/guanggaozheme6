@@ -12,7 +12,7 @@ except ImportError:
     raise SystemExit("PIL missing: pip install pillow")
 
 SRC = "assets/character.jpg"
-OUT = "assets/ascii.svg"
+OUT = "assets/art.svg"
 
 COLS = 90
 FONT = 9.0

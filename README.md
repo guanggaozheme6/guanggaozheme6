@@ -9,7 +9,7 @@
 <br />
 
 <div align="center">
-  <img src="./assets/ascii.svg?v=3" width="100%" alt="ascii art" />
+  <img src="./assets/art.svg" width="100%" alt="ascii art" />
 </div>
 
 <br />
