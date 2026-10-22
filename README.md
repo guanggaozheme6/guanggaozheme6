@@ -9,7 +9,7 @@
 <br />
 
 <div align="center">
-  <img src="./assets/character.jpg" width="420" alt="character" />
+  <img src="./assets/ascii.svg" width="100%" alt="ascii art" />
 </div>
 
 <br />
@@ -59,12 +59,12 @@ huakun@xjtlu:~$ ls ~/projects
 </div>
 
 <details>
-<summary><code>▸ 字符画版本 · 点开有动画</code></summary>
+<summary><code>▸ 原图</code></summary>
 
 <br />
 
 <div align="center">
-  <img src="./assets/ascii.svg" width="100%" alt="ascii art" />
+  <img src="./assets/character.jpg" width="380" alt="character" />
 </div>
 
 </details>
