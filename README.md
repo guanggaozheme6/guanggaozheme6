@@ -1,25 +1,38 @@
 <div align="center">
-  <img src="./assets/banner.svg?v=3" width="100%" alt="HUAKUN" />
+  <img src="./assets/banner.svg?v=4" width="100%" alt="HUAKUN" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=620&lines=First-year+undergrad+%40+XJTLU;Linear+algebra+%26+MATLAB%2C+one+matrix+at+a+time;Python+%C2%B7+C+%C2%B7+still+figuring+it+out" alt="typing" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./assets/art.svg" width="100%" alt="ascii art" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./assets/divider.svg?v=3" width="100%" alt="" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&lines=First-year+undergrad+%40+XJTLU;Linear+algebra+%26+MATLAB%2C+one+matrix+at+a+time;Python+%C2%B7+C+%C2%B7+GPIO+%26+interrupts" alt="typing" />
 </div>
 
 <div align="center">
-  <img src="./assets/term.svg" width="100%" alt="terminal" />
+  <img src="./assets/wave.svg?v=1" width="100%" alt="" />
+</div>
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center" valign="middle" width="260">
+      <img src="./assets/avatar.png?v=1" width="220" alt="和泉纱雾" />
+    </td>
+    <td align="left" valign="middle">
+      <b>Huakun Li</b><br />
+      <sub>大一 · 西交利物浦大学 XJTLU · 苏州</sub>
+      <br /><br />
+      <code>now</code>&nbsp;&nbsp;&nbsp;MTH028 线性代数 · MTH026 微积分 · EAP041<br />
+      <code>learn</code>&nbsp;Python · C · MATLAB<br />
+      <code>build</code>&nbsp;washing-text · assessment1<br />
+      <code>aim</code>&nbsp;&nbsp;&nbsp;Gmaster 电控组 —— C / 位运算 / GPIO / 中断
+      <br /><br />
+      <sub>「先把东西跑通，再谈说得好不好听。」</sub>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div align="center">
+  <img src="./assets/divider.svg?v=4" width="100%" alt="" />
 </div>
 
 <div align="center">
@@ -48,10 +61,8 @@
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guanggaozheme6&layout=compact&hide_border=true&bg_color=0D1117&title_color=FF6FA5&text_color=C9D1D9" alt="langs" />
 </div>
 
-<br />
-
 <div align="center">
-  <img src="./assets/divider.svg?v=3" width="100%" alt="" />
+  <img src="./assets/divider.svg?v=4" width="100%" alt="" />
 </div>
 
 <details>
@@ -60,7 +71,7 @@
 <br />
 
 <div align="center">
-  <img src="./assets/character.jpg?v=3" width="380" alt="character" />
+  <img src="./assets/character.jpg?v=4" width="380" alt="和泉纱雾" />
 </div>
 
 </details>
