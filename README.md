@@ -59,8 +59,12 @@
 <br />
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=guanggaozheme6&show_icons=true&hide_border=true&bg_color=0D1117&title_color=FF6FA5&icon_color=FF6FA5&text_color=C9D1D9&include_all_commits=true&count_private=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=guanggaozheme6&layout=compact&hide_border=true&bg_color=0D1117&title_color=FF6FA5&text_color=C9D1D9" alt="langs" />
+  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="profile details" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="repos per language" />
+  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/2-most-commit-language.svg" width="49%" alt="most commit language" />
 </div>
 
 <div align="center">
