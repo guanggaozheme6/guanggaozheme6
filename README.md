@@ -13,15 +13,15 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center" valign="middle" width="310">
-      <img src="./assets/character.png?v=5" width="300" alt="character" />
+    <td align="center" valign="middle" width="270">
+      <img src="./assets/character.png?v=6" width="260" alt="character" />
     </td>
     <td align="left" valign="middle">
       <b>Huakun Li</b><br />
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
-      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 · STM32H743 · 双 FDCAN · DM 电机<br />
-      <code>learn</code>&nbsp;MuJoCo 闭环 · 固件宿主化（stub HAL → DLL）· C++ 分层<br />
+      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 · STM32H743 · 双 FDCAN<br />
+      <code>learn</code>&nbsp;MuJoCo 闭环 · 固件宿主化（stub HAL）· C++ 分层<br />
       <code>build</code>&nbsp;双臂下位机 · WORD_QUIZ · washing-text<br />
       <code>aim</code>&nbsp;&nbsp;&nbsp;仿真跑通，再上真机
       <br /><br />
