@@ -65,7 +65,7 @@
     <path d="M1156 256 H1084 M1156 256 V184"/>
   </g>
 
-  <text x="600" y="214" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="16" letter-spacing="4" fill="#7d8899">XJTLU  /  YEAR 1  /  SUZHOU, CN</text>
+  <text x="600" y="214" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="16" letter-spacing="4" fill="#7d8899">EMBEDDED  /  STM32 · PYTHON · C</text>
 
   <g fill="#6fe3ff">
     <circle cx="150" cy="70" r="2"><animate attributeName="opacity" values="0;0.9;0" dur="3.6s" begin="0s" repeatCount="indefinite"/></circle>
