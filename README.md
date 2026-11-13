@@ -13,17 +13,17 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center" valign="middle" width="360">
-      <img src="./assets/character.png?v=5" width="340" alt="character" />
+    <td align="center" valign="middle" width="310">
+      <img src="./assets/character.png?v=5" width="300" alt="character" />
     </td>
     <td align="left" valign="middle">
       <b>Huakun Li</b><br />
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
-      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 —— STM32H743 · 双 FDCAN · DM 电机 · 400 Hz<br />
-      <code>learn</code>&nbsp;MuJoCo 闭环仿真 · 固件宿主化（stub HAL 编译成 DLL）· C++ 分层架构<br />
+      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 · STM32H743 · 双 FDCAN · DM 电机<br />
+      <code>learn</code>&nbsp;MuJoCo 闭环 · 固件宿主化（stub HAL → DLL）· C++ 分层<br />
       <code>build</code>&nbsp;双臂下位机 · WORD_QUIZ · washing-text<br />
-      <code>aim</code>&nbsp;&nbsp;&nbsp;仿真里跑通，再上真机
+      <code>aim</code>&nbsp;&nbsp;&nbsp;仿真跑通，再上真机
       <br /><br />
       <sub>「先把东西跑通，再谈说得好不好听。」</sub>
     </td>
