@@ -59,12 +59,12 @@
 <br />
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="profile details" />
+  <img src="./profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="profile details" />
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="repos per language" />
-  <img src="https://raw.githubusercontent.com/guanggaozheme6/guanggaozheme6/profile-summary-card-output/github_dark/2-most-commit-language.svg" width="49%" alt="most commit language" />
+  <img src="./profile-summary-card-output/github_dark/1-repos-per-language.svg" width="49%" alt="repos per language" />
+  <img src="./profile-summary-card-output/github_dark/2-most-commit-language.svg" width="49%" alt="most commit language" />
 </div>
 
 <div align="center">
