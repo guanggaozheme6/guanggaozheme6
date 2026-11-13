@@ -22,5 +22,5 @@ jobs:
         with:
           USERNAME: guanggaozheme6
           BRANCH_NAME: profile-summary-card-output
-          THEME: github_dark
+          THEME: radical
           UTC_OFFSET: 8
