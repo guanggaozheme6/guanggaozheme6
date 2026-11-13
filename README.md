@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&lines=Embedded+systems+%26+automation;Python+%C2%B7+C+%C2%B7+STM32+GPIO+%26+interrupts;Build+it%2C+flash+it%2C+measure+it" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&lines=Embedded+control+systems;STM32H7+%C2%B7+FDCAN+%C2%B7+DM+motors+%40400+Hz;MuJoCo+closed-loop%2C+then+real+hardware" alt="typing" />
 </div>
 
 <div align="center">
@@ -20,10 +20,10 @@
       <b>Huakun Li</b><br />
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
-      <code>now</code>&nbsp;&nbsp;&nbsp;STM32 外设驱动 · HAL · PID 控制<br />
-      <code>learn</code>&nbsp;C 指针 · 位运算 · 中断与 CAN<br />
-      <code>build</code>&nbsp;WORD_QUIZ · washing-text · PIDLearning-KUN<br />
-      <code>aim</code>&nbsp;&nbsp;&nbsp;能跑、能复现的嵌入式项目
+      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 —— STM32H743 · 双 FDCAN · DM 电机 · 400 Hz<br />
+      <code>learn</code>&nbsp;MuJoCo 闭环仿真 · 固件宿主化（stub HAL 编译成 DLL）· C++ 分层架构<br />
+      <code>build</code>&nbsp;双臂下位机 · WORD_QUIZ · washing-text<br />
+      <code>aim</code>&nbsp;&nbsp;&nbsp;仿真里跑通，再上真机
       <br /><br />
       <sub>「先把东西跑通，再谈说得好不好听。」</sub>
     </td>
@@ -39,7 +39,10 @@
 
 <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=FF6FA5" alt="python" />
 <img src="https://img.shields.io/badge/C-0D1117?style=flat-square&logo=c&logoColor=FF6FA5" alt="c" />
+<img src="https://img.shields.io/badge/C++-0D1117?style=flat-square&logo=cplusplus&logoColor=FF6FA5" alt="c++" />
 <img src="https://img.shields.io/badge/STM32-0D1117?style=flat-square&logo=stmicroelectronics&logoColor=FF6FA5" alt="stm32" />
+<img src="https://img.shields.io/badge/FDCAN-0D1117?style=flat-square&logoColor=FF6FA5" alt="fdcan" />
+<img src="https://img.shields.io/badge/MuJoCo-0D1117?style=flat-square&logoColor=FF6FA5" alt="mujoco" />
 <img src="https://img.shields.io/badge/ESP32-0D1117?style=flat-square&logo=espressif&logoColor=FF6FA5" alt="esp32" />
 <img src="https://img.shields.io/badge/MATLAB-0D1117?style=flat-square&logo=mathworks&logoColor=FF6FA5" alt="matlab" />
 <img src="https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=FF6FA5" alt="git" />
