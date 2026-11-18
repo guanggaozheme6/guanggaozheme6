@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&lines=Embedded+control+systems;STM32H7+%C2%B7+FDCAN+%C2%B7+DM+motors+%40400+Hz;MuJoCo+closed-loop%2C+then+real+hardware" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2800&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&lines=Embedded+control+systems;STM32F1+%2B+H7+%C2%B7+CAN+%C2%B7+servo+loops;simulate+first%2C+then+flash" alt="typing" />
 </div>
 
 <div align="center">
@@ -20,9 +20,9 @@
       <b>Huakun Li</b><br />
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
-      <code>now</code>&nbsp;&nbsp;&nbsp;双臂 14 关节伺服 · STM32H743 · 双 FDCAN<br />
-      <code>learn</code>&nbsp;MuJoCo 闭环 · 固件宿主化（stub HAL）· C++ 分层<br />
-      <code>build</code>&nbsp;双臂下位机 · WORD_QUIZ · washing-text<br />
+      <code>now</code>&nbsp;&nbsp;&nbsp;麦轮底盘 + 平面 2R 臂 · STM32F103 · PS2<br />
+      <code>learn</code>&nbsp;3D 仿真对拍 · 关节限位钳位 · C++ 分层<br />
+      <code>build</code>&nbsp;机械臂下位机 · 双臂 7dof · WORD_QUIZ<br />
       <code>aim</code>&nbsp;&nbsp;&nbsp;仿真跑通，再上真机
       <br /><br />
       <sub>「先把东西跑通，再谈说得好不好听。」</sub>
