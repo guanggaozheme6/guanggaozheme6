@@ -21,7 +21,7 @@
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
       <code>now</code>&nbsp;&nbsp;&nbsp;麦轮底盘 + 平面 2R 臂 · STM32F103 · PS2<br />
-      <code>learn</code>&nbsp;3D 仿真对拍 · 关节限位钳位 · C++ 分层<br />
+      <code>learn</code>&nbsp;2R 逆解选支 · 二维仿真对拍 · C++ 分层<br />
       <code>build</code>&nbsp;机械臂下位机 · 双臂 7dof · WORD_QUIZ<br />
       <code>aim</code>&nbsp;&nbsp;&nbsp;仿真跑通，再上真机
       <br /><br />
