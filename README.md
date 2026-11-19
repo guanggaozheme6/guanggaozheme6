@@ -21,7 +21,7 @@
       <sub>Embedded systems · Python / C</sub>
       <br /><br />
       <code>now</code>&nbsp;&nbsp;&nbsp;麦轮底盘 + 平面 2R 臂 · STM32F103 · PS2<br />
-      <code>learn</code>&nbsp;摇杆两段式限位 · 结构限位入配置 · C++ 分层<br />
+      <code>learn</code>&nbsp;DH 参数对 URDF · 7dof 控制流 · C++ 分层<br />
       <code>build</code>&nbsp;机械臂下位机 · 双臂 7dof · WORD_QUIZ<br />
       <code>aim</code>&nbsp;&nbsp;&nbsp;仿真跑通，再上真机
       <br /><br />
